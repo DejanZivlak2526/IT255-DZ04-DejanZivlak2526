@@ -1,0 +1,103 @@
+@black: #222;
+@white: #fff;
+@facebook:#3b5998;
+@twitter: #4099ff;
+@instagram: #e95950;
+@padding: 20px;
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #e3e3e3;
+}
+
+a {
+    text-decoration: none;
+}
+
+.omotac {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: @white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar-omotac {
+    background-color: @black;
+    height: 60px;
+    .menuitem{
+        float:left;
+        margin:0 auto;
+        padding:20px 10px;
+        a{
+            color: @white;
+            margin-top: 20px;
+            padding:22px 30px;
+            &:hover {
+                background-color: @white;
+                color: @black;
+            }
+        }
+    }   
+}
+
+#about {
+    padding: @padding;
+    text-align: justify;
+}
+
+#posts {
+    padding: @padding;
+    text-align: justify;
+    
+    img {
+        width: 920px;
+    }
+    a {
+        opacity: 0.8;
+        color: @black;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+#social {
+    padding: @padding;
+    background-color: @black;
+    color: @white;
+    h1 {
+        color: @white;
+    } 
+    text-align: center;
+    #socials {
+        #facebook{
+            a{
+                color: @facebook;
+            }
+        }
+        #twitter{
+            a{
+                color: @twitter;
+            }
+        }
+        #instagram{
+            a{
+                color: @instagram;
+            }
+        }
+    }
+}
+
+#footer {
+    height: 60px;
+    margin-top: 20px;
+    background-color: @black;
+    color: @white;
+    text-align: center;
+    padding-top: 20px;
+}
